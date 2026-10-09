@@ -1,0 +1,8 @@
+{
+  "name": "learning-web-proxy",
+  "version": "1.0.0",
+  "description": "学習用Webプロキシ（依存なし）",
+  "main": "server.js",
+  "scripts": { "start": "node server.js", "test": "node test/run-test.js" },
+  "engines": { "node": ">=18" }
+}

@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: my-web-proxy
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /healthz
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: NODE_VERSION
+        value: "22"
+      - key: BASIC_AUTH
+        sync: false   # ダッシュボードで "ユーザー名:長いパスワード" を入力
